@@ -16,6 +16,9 @@
 		7648BF312887DEB6009433EA /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7648BF302887DEB6009433EA /* Book.storyboard */; };
 		7648BF332887DECD009433EA /* BookCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648BF322887DECD009433EA /* BookCollectionViewController.swift */; };
 		7648BF352887DED8009433EA /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648BF342887DED8009433EA /* BookCollectionViewCell.swift */; };
+		7648BF372887E109009433EA /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648BF362887E109009433EA /* Book.swift */; };
+		7648BF392887E533009433EA /* BookInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7648BF382887E533009433EA /* BookInfo.swift */; };
+		7648BF3C2887E659009433EA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7648BF3B2887E659009433EA /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,8 @@
 		7648BF302887DEB6009433EA /* Book.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Book.storyboard; sourceTree = "<group>"; };
 		7648BF322887DECD009433EA /* BookCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewController.swift; sourceTree = "<group>"; };
 		7648BF342887DED8009433EA /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		7648BF362887E109009433EA /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		7648BF382887E533009433EA /* BookInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7648BF3C2887E659009433EA /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,16 +68,18 @@
 		7648BF1B2887DDF7009433EA /* Book */ = {
 			isa = PBXGroup;
 			children = (
+				7648BF2A2887DDF8009433EA /* Info.plist */,
+				7648BF302887DEB6009433EA /* Book.storyboard */,
 				7648BF1C2887DDF7009433EA /* AppDelegate.swift */,
+				7648BF362887E109009433EA /* Book.swift */,
+				7648BF342887DED8009433EA /* BookCollectionViewCell.swift */,
+				7648BF322887DECD009433EA /* BookCollectionViewController.swift */,
+				7648BF382887E533009433EA /* BookInfo.swift */,
 				7648BF1E2887DDF7009433EA /* SceneDelegate.swift */,
 				7648BF202887DDF7009433EA /* ViewController.swift */,
-				7648BF222887DDF7009433EA /* Main.storyboard */,
-				7648BF302887DEB6009433EA /* Book.storyboard */,
-				7648BF322887DECD009433EA /* BookCollectionViewController.swift */,
-				7648BF342887DED8009433EA /* BookCollectionViewCell.swift */,
 				7648BF252887DDF8009433EA /* Assets.xcassets */,
 				7648BF272887DDF8009433EA /* LaunchScreen.storyboard */,
-				7648BF2A2887DDF8009433EA /* Info.plist */,
+				7648BF222887DDF7009433EA /* Main.storyboard */,
 			);
 			path = Book;
 			sourceTree = "<group>";
@@ -92,6 +100,9 @@
 			dependencies = (
 			);
 			name = Book;
+			packageProductDependencies = (
+				7648BF3B2887E659009433EA /* Kingfisher */,
+			);
 			productName = Book;
 			productReference = 7648BF192887DDF7009433EA /* Book.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 7648BF102887DDF7009433EA;
+			packageReferences = (
+				7648BF3A2887E659009433EA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 7648BF1A2887DDF7009433EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -150,7 +164,9 @@
 			files = (
 				7648BF212887DDF7009433EA /* ViewController.swift in Sources */,
 				7648BF1D2887DDF7009433EA /* AppDelegate.swift in Sources */,
+				7648BF372887E109009433EA /* Book.swift in Sources */,
 				7648BF1F2887DDF7009433EA /* SceneDelegate.swift in Sources */,
+				7648BF392887E533009433EA /* BookInfo.swift in Sources */,
 				7648BF352887DED8009433EA /* BookCollectionViewCell.swift in Sources */,
 				7648BF332887DECD009433EA /* BookCollectionViewController.swift in Sources */,
 			);
@@ -372,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7648BF3A2887E659009433EA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7648BF3B2887E659009433EA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7648BF3A2887E659009433EA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7648BF112887DDF7009433EA /* Project object */;
 }

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Book Collection View Controller-->
         <scene sceneID="rve-FK-5s0">
             <objects>
-                <collectionViewController id="JIW-eA-AaS" sceneMemberID="viewController">
+                <collectionViewController id="JIW-eA-AaS" customClass="BookCollectionViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fcY-QQ-F93">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,26 +25,26 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCollectionViewCell" id="ysL-Mo-Cxk" customClass="BookCollectionViewCell" customModule="Book" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="142.5" height="158.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="142.5" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fUH-35-jv2">
-                                    <rect key="frame" x="0.0" y="0.0" width="142.5" height="158.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="142.5" height="154"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOR-Cl-QVX">
-                                            <rect key="frame" x="8" y="16" width="126.5" height="24"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <rect key="frame" x="8" y="16" width="126.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YGE-57-xHA">
-                                            <rect key="frame" x="49" y="56" width="85.5" height="102.5"/>
+                                            <rect key="frame" x="49" y="51.5" width="85.5" height="102.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="YGE-57-xHA" secondAttribute="height" multiplier="1:1.2" id="4tc-AI-fm6"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuo-e2-28h">
-                                            <rect key="frame" x="10" y="128" width="29" height="14.5"/>
+                                            <rect key="frame" x="10" y="123.5" width="29" height="14.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -64,6 +64,12 @@
                                         <constraint firstAttribute="bottom" secondItem="YGE-57-xHA" secondAttribute="bottom" id="v1e-OX-ZtO"/>
                                     </constraints>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="backgroundContentView" destination="fUH-35-jv2" id="XoO-L1-78W"/>
+                                    <outlet property="bookDateLabel" destination="Fuo-e2-28h" id="lrK-zK-ibb"/>
+                                    <outlet property="bookImageView" destination="YGE-57-xHA" id="Gel-Tc-tar"/>
+                                    <outlet property="bookTitleLabel" destination="yOR-Cl-QVX" id="Cc6-bT-UZc"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
