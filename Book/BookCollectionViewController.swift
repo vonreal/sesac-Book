@@ -34,7 +34,8 @@ class BookCollectionViewController: UICollectionViewController {
         let url = URL(string: bookList[indexPath.item].coverImage)
         cell.bookImageView.kf.setImage(with: url)
         
-        cell.bookImageView.layer.cornerRadius = 4
+        cell.bookImageView.layer.cornerRadius = 5
+        cell.bookImageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         cell.backgroundContentView.layer.cornerRadius = 18
         
         cell.backgroundContentView.backgroundColor = bookList[indexPath.item].backgroundColor

@@ -25,26 +25,26 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCollectionViewCell" id="ysL-Mo-Cxk" customClass="BookCollectionViewCell" customModule="Book" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="142.5" height="154"/>
+                                <rect key="frame" x="0.0" y="0.0" width="145" height="151.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fUH-35-jv2">
-                                    <rect key="frame" x="0.0" y="0.0" width="142.5" height="154"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="145" height="151.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOR-Cl-QVX">
-                                            <rect key="frame" x="8" y="16" width="126.5" height="19.5"/>
+                                            <rect key="frame" x="8" y="16" width="129" height="19.5"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YGE-57-xHA">
-                                            <rect key="frame" x="49" y="51.5" width="85.5" height="102.5"/>
+                                            <rect key="frame" x="50" y="51.5" width="87" height="100"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="YGE-57-xHA" secondAttribute="height" multiplier="1:1.2" id="4tc-AI-fm6"/>
+                                                <constraint firstAttribute="width" secondItem="YGE-57-xHA" secondAttribute="height" multiplier="1:1.15" id="4tc-AI-fm6"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuo-e2-28h">
-                                            <rect key="frame" x="10" y="123.5" width="29" height="14.5"/>
+                                            <rect key="frame" x="8" y="121" width="29" height="14.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -53,11 +53,11 @@
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="yOR-Cl-QVX" secondAttribute="trailing" constant="8" id="4Yq-gz-Tjx"/>
-                                        <constraint firstItem="Fuo-e2-28h" firstAttribute="leading" secondItem="fUH-35-jv2" secondAttribute="leading" constant="10" id="8Nf-IV-efv"/>
+                                        <constraint firstItem="Fuo-e2-28h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fUH-35-jv2" secondAttribute="leading" constant="8" id="8Nf-IV-efv"/>
                                         <constraint firstItem="yOR-Cl-QVX" firstAttribute="leading" secondItem="fUH-35-jv2" secondAttribute="leading" constant="8" id="8W2-f1-x1S"/>
                                         <constraint firstItem="YGE-57-xHA" firstAttribute="width" secondItem="fUH-35-jv2" secondAttribute="width" multiplier="0.6" id="Kfu-l3-TxD"/>
                                         <constraint firstAttribute="trailing" secondItem="YGE-57-xHA" secondAttribute="trailing" constant="8" id="Zx1-lz-mAO"/>
-                                        <constraint firstItem="YGE-57-xHA" firstAttribute="leading" secondItem="Fuo-e2-28h" secondAttribute="trailing" constant="10" id="a6r-Bi-q2a"/>
+                                        <constraint firstItem="YGE-57-xHA" firstAttribute="leading" secondItem="Fuo-e2-28h" secondAttribute="trailing" constant="13" id="a6r-Bi-q2a"/>
                                         <constraint firstAttribute="bottom" secondItem="Fuo-e2-28h" secondAttribute="bottom" constant="16" id="bmV-bW-Plt"/>
                                         <constraint firstItem="yOR-Cl-QVX" firstAttribute="top" secondItem="fUH-35-jv2" secondAttribute="top" constant="16" id="hC3-6I-xaz"/>
                                         <constraint firstItem="YGE-57-xHA" firstAttribute="top" secondItem="yOR-Cl-QVX" secondAttribute="bottom" constant="16" id="pTn-hS-zve"/>
