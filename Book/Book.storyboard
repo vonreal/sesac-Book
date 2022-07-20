@@ -25,43 +25,43 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCollectionViewCell" id="ysL-Mo-Cxk" customClass="BookCollectionViewCell" customModule="Book" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="145" height="151.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="104" height="129.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fUH-35-jv2">
-                                    <rect key="frame" x="0.0" y="0.0" width="145" height="151.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="104" height="129.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOR-Cl-QVX">
-                                            <rect key="frame" x="8" y="16" width="129" height="19.5"/>
+                                            <rect key="frame" x="8" y="16" width="88" height="33"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YGE-57-xHA">
-                                            <rect key="frame" x="50" y="51.5" width="87" height="100"/>
+                                            <rect key="frame" x="39" y="61" width="57" height="68.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="YGE-57-xHA" secondAttribute="height" multiplier="1:1.15" id="4tc-AI-fm6"/>
+                                                <constraint firstAttribute="width" secondItem="YGE-57-xHA" secondAttribute="height" multiplier="1:1.2" id="kVp-7q-w5q"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuo-e2-28h">
-                                            <rect key="frame" x="8" y="121" width="29" height="14.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <rect key="frame" x="15.5" y="101.5" width="24.5" height="12"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="yOR-Cl-QVX" secondAttribute="trailing" constant="8" id="4Yq-gz-Tjx"/>
-                                        <constraint firstItem="Fuo-e2-28h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fUH-35-jv2" secondAttribute="leading" constant="8" id="8Nf-IV-efv"/>
-                                        <constraint firstItem="yOR-Cl-QVX" firstAttribute="leading" secondItem="fUH-35-jv2" secondAttribute="leading" constant="8" id="8W2-f1-x1S"/>
-                                        <constraint firstItem="YGE-57-xHA" firstAttribute="width" secondItem="fUH-35-jv2" secondAttribute="width" multiplier="0.6" id="Kfu-l3-TxD"/>
-                                        <constraint firstAttribute="trailing" secondItem="YGE-57-xHA" secondAttribute="trailing" constant="8" id="Zx1-lz-mAO"/>
-                                        <constraint firstItem="YGE-57-xHA" firstAttribute="leading" secondItem="Fuo-e2-28h" secondAttribute="trailing" constant="13" id="a6r-Bi-q2a"/>
-                                        <constraint firstAttribute="bottom" secondItem="Fuo-e2-28h" secondAttribute="bottom" constant="16" id="bmV-bW-Plt"/>
-                                        <constraint firstItem="yOR-Cl-QVX" firstAttribute="top" secondItem="fUH-35-jv2" secondAttribute="top" constant="16" id="hC3-6I-xaz"/>
-                                        <constraint firstItem="YGE-57-xHA" firstAttribute="top" secondItem="yOR-Cl-QVX" secondAttribute="bottom" constant="16" id="pTn-hS-zve"/>
-                                        <constraint firstAttribute="bottom" secondItem="YGE-57-xHA" secondAttribute="bottom" id="v1e-OX-ZtO"/>
+                                        <constraint firstAttribute="bottom" secondItem="YGE-57-xHA" secondAttribute="bottom" id="9SB-Wx-C6v"/>
+                                        <constraint firstAttribute="bottom" secondItem="Fuo-e2-28h" secondAttribute="bottom" constant="16" id="AYQ-Nr-NYP"/>
+                                        <constraint firstItem="yOR-Cl-QVX" firstAttribute="top" secondItem="fUH-35-jv2" secondAttribute="top" constant="16" id="I3v-fw-sQB"/>
+                                        <constraint firstItem="YGE-57-xHA" firstAttribute="top" secondItem="yOR-Cl-QVX" secondAttribute="top" multiplier="3.8" id="IWB-tk-Ay6"/>
+                                        <constraint firstItem="Fuo-e2-28h" firstAttribute="leading" secondItem="yOR-Cl-QVX" secondAttribute="leading" multiplier="2" id="LnB-uO-w9l"/>
+                                        <constraint firstItem="yOR-Cl-QVX" firstAttribute="centerX" secondItem="fUH-35-jv2" secondAttribute="centerX" id="Xwe-na-jOT"/>
+                                        <constraint firstItem="yOR-Cl-QVX" firstAttribute="width" secondItem="fUH-35-jv2" secondAttribute="width" multiplier="0.85" id="bWh-QM-wiy"/>
+                                        <constraint firstItem="YGE-57-xHA" firstAttribute="width" secondItem="fUH-35-jv2" secondAttribute="width" multiplier="0.55" id="dpz-mm-UyG"/>
+                                        <constraint firstItem="YGE-57-xHA" firstAttribute="trailing" secondItem="yOR-Cl-QVX" secondAttribute="trailing" id="f1w-pb-N4g"/>
+                                        <constraint firstItem="YGE-57-xHA" firstAttribute="top" secondItem="yOR-Cl-QVX" secondAttribute="bottom" constant="12" id="rgN-0J-Axi"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
