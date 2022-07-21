@@ -15,7 +15,17 @@ class BookCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "베스트셀러"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass.circle"), style: .plain, target: self, action: #selector(searchButtonClicked))
         designCollectionViewLayout()
+    }
+    
+    @objc func searchButtonClicked() {
+        let sb = UIStoryboard(name: "Search", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: SearchViewController.identifier) as! SearchViewController
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true)
     }
     
     // MARK: - [필수] 1. 아이템 갯수 정하기
@@ -55,5 +65,13 @@ class BookCollectionViewController: UICollectionViewController {
         layout.minimumLineSpacing = spacing + 2
                                            
         collectionView.collectionViewLayout = layout
+    }
+    
+    // MARK: - 4. 아이템을 선택했을때
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "BookDetail", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: BookDetailViewController.identifier) as! BookDetailViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
